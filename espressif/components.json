@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["idf_component.yml$"],
+      "datasourceTemplate": "custom.espressif",
+      "matchStrings": [
+        "(?<depName>[^\\s:]+):\\s*version:\\s*\"(?<currentValue>[^\"]+)\""
+      ],
+      "versioningTemplate": "npm"
+    }
+  ],
+  "customDatasources": {
+    "espressif": {
+      "defaultRegistryUrlTemplate": "https://components-file.espressif.com/components/{{packageName}}.json",
+      "transformTemplates": [
+        "{ \"releases\": [ versions.{ \"version\": version, \"releaseTimestamp\": created_at } ], \"homepage\": versions[0].homepage }"
+      ]
+    }
+  }
+}
