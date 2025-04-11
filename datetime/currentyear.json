@@ -4,7 +4,7 @@
     "currentyear": {
       "defaultRegistryUrlTemplate": "https://timeapi.io/api/time/current/zone?timeZone=UTC",
       "transformTemplates": [
-        "{ \"releases\": [ { \"version\": year, \"releaseTimestamp\": year & \"-01-01T00:00:00Z\" } ] }"
+        "{ \"releases\": [ { \"version\": $string(year), \"releaseTimestamp\": year & \"-01-01T00:00:00Z\" } ] }"
       ]
     }
   }
