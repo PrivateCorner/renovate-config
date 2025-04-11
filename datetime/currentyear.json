@@ -10,7 +10,7 @@
   },
   "packageRules": [
     {
-      "matchDatasources": ["currentyear"],
+      "matchDatasources": ["custom.currentyear"],
       "versioning": "loose"
     }
   ]

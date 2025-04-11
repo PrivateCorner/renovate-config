@@ -3,6 +3,7 @@
   "extends": [
     "github>PrivateCorner/renovate-config//datetime/currentyear",
     "github>PrivateCorner/renovate-config//espressif/idf",
-    "github>PrivateCorner/renovate-config//espressif/components"
+    "github>PrivateCorner/renovate-config//espressif/components",
+    "github>PrivateCorner/renovate-config/reuse"
   ]
 }
