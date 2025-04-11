@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customDatasources": {
+    "currentyear": {
+      "defaultRegistryUrlTemplate": "https://timeapi.io/api/time/current/zone?timeZone=UTC",
+      "transformTemplates": [
+        "{ \"releases\": [ { \"version\": year, \"releaseTimestamp\": year & \"-01-01T00:00:00Z\" } ] }"
+      ]
+    }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["currentyear"],
+      "versioning": "loose"
+    }
+  ]
+}
