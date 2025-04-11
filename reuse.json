@@ -4,7 +4,7 @@
     {
       "customType": "regex",
       "fileMatch": ["REUSE.toml$"],
-      "datasourceTemplate": "custom.reuse",
+      "datasourceTemplate": "custom.currentyear",
       "matchStrings": [
         "(?<currentValue>\\d{4})"
       ],
