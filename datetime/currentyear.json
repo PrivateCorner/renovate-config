@@ -7,11 +7,5 @@
         "{ \"releases\": [ { \"version\": year, \"releaseTimestamp\": year & \"-01-01T00:00:00Z\" } ] }"
       ]
     }
-  },
-  "packageRules": [
-    {
-      "matchDatasources": ["custom.currentyear"],
-      "versioning": "loose"
-    }
-  ]
+  }
 }

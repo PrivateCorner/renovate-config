@@ -8,7 +8,8 @@
       "matchStrings": [
         "(?<currentValue>\\d{4})"
       ],
-      "depNameTemplate": "Current Year"
+      "depNameTemplate": "Current Year",
+      "versioningTemplate": "loose"
     }
   ]
 }
