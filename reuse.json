@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["REUSE.toml$"],
+      "datasourceTemplate": "custom.reuse",
+      "matchStrings": [
+        "(?<currentValue>\d{4})"
+      ],
+      "depNameTemplate": "Current Year"
+    }
+  ]
+}
