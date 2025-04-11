@@ -6,7 +6,7 @@
       "fileMatch": ["REUSE.toml$"],
       "datasourceTemplate": "custom.reuse",
       "matchStrings": [
-        "(?<currentValue>\d{4})"
+        "(?<currentValue>\\d{4})"
       ],
       "depNameTemplate": "Current Year"
     }
